@@ -1,0 +1,77 @@
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a routerLink="/home"  class="nav-link px-2 text-white">home</a></li>
+        <li><a routerLink="/entreprise" class="nav-link px-2 text-white">ajouter une entreprise</a></li>
+        <li><a routerLink="/particulier" class="nav-link px-2 text-white">ajouter un particulier</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">contact</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <a routerLink="/login"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+        <a routerLink="/#"><button type="button" class="btn btn-warning">Sign-up</button></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- <div>
+    <img [src]="imagesSrc" style="max-height 200px;">
+</div>
+<input type="file">
+(change)="onSelectedFile($eventE)" -->
+
+<form (submit)="createPiment()" [formGroup]="form">
+  <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">Photo</label>
+      <img [src]="imageSrc" style="max-height: 200px;">
+      <input type="file" (change)="onselectedFile($event)" class="form-control" id="exampleFormControlInput1" name="photo" formControlName="photo"
+        placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">titre</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="designation"
+        formControlName="designation" placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">Description</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="description"
+        formControlName="description" placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">domaine</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="domaine" formControlName="domaine"
+        placeholder="Kg">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">nomPrestateur</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="nomPrestateur" formControlName="nomPrestateur"
+        placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">type De Prestation</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="typeDePrestation" formControlName="typeDePrestation"
+        placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">contact</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="contact" formControlName="contact"
+        placeholder="6989873...">
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlInputarea1" class="form-label">email</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="email" formControlName="email"
+        placeholder="email">
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>

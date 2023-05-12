@@ -1,0 +1,64 @@
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a routerLink="/home"  class="nav-link px-2 text-white">home</a></li>
+        <li><a routerLink="/entreprise" class="nav-link px-2 text-white">ajouter une entreprise</a></li>
+        <li><a routerLink="/particulier" class="nav-link px-2 text-white">ajouter un particulier</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">contact</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <a routerLink="/login"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+        <a routerLink="/#"><button type="button" class="btn btn-warning">Sign-up</button></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div *ngFor="let piment of piments">
+        <div *ngIf="piment.reference == Detail"> 
+            <h1 class="text-center text">Details de la prestation de <p>{{piment.titre}}</p></h1>
+           <p class="text-center">
+             <img src="{{ piment.photos }}" style="height: 450px;width:500px;Size:'center';Position:'center'; " class="card-img-top" alt="..."> 
+            <div class="card-body text-center">
+                <h5 class="card-title"><strong>ENTREPRISE : </strong>{{ piment.titre | uppercase}}</h5>
+                <h5 class="card-title"><strong>DOMAINE : </strong> {{ piment.domaine | uppercase}}</h5>
+                <h5 class="card-title"><strong>OBJET :</strong>{{ piment.description | uppercase}}</h5>
+                <h5 class="card-title"><strong>TYPE DE PRESTATION :</strong>{{ piment.typeDePrestation | uppercase}}</h5>
+                <h5 class="card-text"><strong>CHARGER DE LA PRESTATION  : </strong>{{piment.nomPrestateur| uppercase}} </h5>
+                <h5 class="card-text"><strong>CONTACT : </strong>{{piment.contact| uppercase}} </h5>
+                <h5 class="card-text"><strong>EMAIL : </strong>{{piment.email| uppercase}} </h5>
+                <a routerLink="/piment-index"  class="btn btn-primary">Retour</a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 
+    <div class="row text-center" style="margin-right:10px;">
+      <div class="card shadow-sm" *ngFor="let piment of piments">
+        <img src="{{ piment.photos }}"  class="card-img-top" alt="..." width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">
+              <h5 class="card-title"><strong><p></p> Entreprise : </strong><strong>{{ piment.titre | uppercase}}</strong></h5>
+              <h5 class="card-title"><strong>Object :</strong>{{ piment.description | uppercase}}</h5>
+              <h5 class="card-title"><strong> Domaine :{{ piment.domaine | uppercase}}</strong></h5>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a routerLink="/piment-details/{{piment.reference}}"  ><button type="button" class="btn btn-sm btn-outline-secondary">Details</button></a>&nbsp;
+              <a routerLink="/piment-details/{{piment.reference}}"  ><button type="button" class="btn btn-sm btn-outline-secondary"><img src="assets/images/communication_50px.png" width="20px" height="20&nbsp;px" alt=""></button></a>
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+    </div> -->

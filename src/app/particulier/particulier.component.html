@@ -1,0 +1,85 @@
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+      <h2>Ajout dun particulier </h2>
+        <p class="lead">Votre profil est vue par tous, les entreprise,les autre particulier et tout autre personne a la recherche dun service </p>
+      </div>
+  
+      <div class="row g-3">
+        
+          <h4 class="mb-3">NOMENCLATURE</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label"> NOM </label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Prenom</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Email prive</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder=" email vue uniquement par les admin" required>
+                <div class="invalid-feedback">
+                  email vue uniquement par les admin 
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label"> Email <span class="text-muted">()</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  يرجى إدخال عنوان بريد إلكتروني صحيح لتصلكم تحديثات الشحن.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">domaine</label>
+                <input type="text" class="form-control" id="address" placeholder="..." required>
+                <div class="invalid-feedback">
+                  يرجى إدخال عنوان الشحن الخاص بك.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address2" class="form-label"> numero de telephone <span class="text-muted"></span></label>
+                <input type="text" class="form-control" id="address2" placeholder="6989873...">
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">travail plus pour les hommes</label>
+            </div>
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">travail plus pour les femmes</label>
+            </div>
+  
+            <br>
+            <a routerLink="/piment-index" class="nav-link px-2 text-white">
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Enregistrer</button>
+            </a>
+          </form>
+        
+      </div>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <ul class="list-inline">   
+      </ul>
+    </footer>
+  </div>

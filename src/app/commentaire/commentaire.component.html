@@ -1,0 +1,148 @@
+
+<!doctype html>
+      
+<body class="bg-light">  
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+    <h2>Ajout dune Entreprise</h2>
+      <p class="lead">les entreprise ajouter sont vue par tous,  autre entreprise, particulier et tout autre personne a la recherche dun service </p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">similaire</span>
+          <span class="badge bg-secondary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">CODEX</h6>
+              <small class="text-muted">DOUALA ,Village</small>
+            </div>
+            <span class="text-muted">30 000 fcfa</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">CAMTEL</h6>
+              <small class="text-muted">DOUALA ,AKWA</small>
+            </div>
+            <span class="text-muted">30 000 fcfa</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">ORANGE</h6>
+              <small class="text-muted">DOUALA ,LOGBESSOU</small>
+            </div>
+            <span class="text-muted">30 000 fcfa</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">IUC</h6>
+              <small class="text-muted">DOUALA ,AKWA</small>
+            </div>
+            <span class="text-muted">30 000 fcfa</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">MTN</h6>
+              <small class="text-muted">DOUALA ,VILLAGE</small>
+            </div>
+            <span class="text-muted">30 000 fcfa</span>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="...">
+            <button type="submit" class="btn btn-secondary">Recherche</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">NOMENCLATURE DE LENTREPRISE</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label"> NOM </label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                nom de lemtreprise
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">VILLE</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                ville de lentreprise
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Email responsable</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder=" email vue uniquement par les admin" required>
+              <div class="invalid-feedback">
+                email vue uniquement par les admin 
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label"> Email <span class="text-muted">(entreprise)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                يرجى إدخال عنوان بريد إلكتروني صحيح لتصلكم تحديثات الشحن.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">domaine</label>
+              <input type="text" class="form-control" id="address" placeholder="..." required>
+              <div class="invalid-feedback">
+                يرجى إدخال عنوان الشحن الخاص بك.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label"> nombre d'offre <span class="text-muted"></span></label>
+              <input type="text" class="form-control" id="address2" placeholder="(1-100)">
+            </div>
+
+            <div class="col-12">
+                <label for="address2" class="form-label"> date de creation <span class="text-muted"></span></label>&nbsp;
+                <input type="text" class="form-control" id="address2" placeholder="(1-100)">
+              </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Recherche plus les hommes</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Recherche plus les femmes</label>
+          </div>
+
+          <br>
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Enregistrer</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <ul class="list-inline">   
+    </ul>
+  </footer>
+</div>
+
+  </body>
+
+
